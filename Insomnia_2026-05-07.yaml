@@ -1,0 +1,136 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Labo2
+meta:
+  id: wrk_63b1b002f18c4829a0934e5b306b2568
+  created: 1778195358159
+  modified: 1778195358159
+  description: ""
+collection:
+  - url: http://localhost:4000/api/pirata/create
+    name: New Request
+    meta:
+      id: req_1ce9e61ec4724e6fa6e0775a7c52bfc3
+      created: 1778195384988
+      modified: 1778195425818
+      isPrivate: false
+      description: ""
+      sortKey: -1778195384988
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Luffy",
+          "bounty": 3000000000,
+          "crew": 10,
+          "isActive": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/pirata/find/78a29c02-76d9-4dfc-9542-b088c0b56ed2
+    name: New Request
+    meta:
+      id: req_68aef463bafd47498e4b3f1c35b5e967
+      created: 1778195432834
+      modified: 1778195488770
+      isPrivate: false
+      description: ""
+      sortKey: -1778195432834
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/pirata/update/78a29c02-76d9-4dfc-9542-b088c0b56ed2
+    name: New Request
+    meta:
+      id: req_86dfa5ad3c604c30840b04408faef2ac
+      created: 1778195508886
+      modified: 1778195718786
+      isPrivate: false
+      description: ""
+      sortKey: -1778195508886
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Luffy Gear 5",
+          "bounty": 5000000000,
+          "crew": 10,
+          "isActive": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/pirata/delete/78a29c02-76d9-4dfc-9542-b088c0b56ed2
+    name: New Request
+    meta:
+      id: req_38c959532dd54e4eb1131118aa6fe6e0
+      created: 1778195741860
+      modified: 1778195756556
+      isPrivate: false
+      description: ""
+      sortKey: -1778195741860
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c919a884f08ca028cf3b2e2dc17ad8db080e059e
+    created: 1778195358182
+    modified: 1778195358182
+environments:
+  name: Base Environment
+  meta:
+    id: env_c919a884f08ca028cf3b2e2dc17ad8db080e059e
+    created: 1778195358170
+    modified: 1778195358170
+    isPrivate: false
